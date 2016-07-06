@@ -5,6 +5,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 
 class Post(models.Model):
+
 	STATUS_CHOICE = (("draft","DRAFT"),("published","PUBLISHED"),)
  	
 
@@ -19,6 +20,7 @@ class Post(models.Model):
 	 class Meta:
 		ordering = ("-published",)
 	 def __str__(self):
+
 		return self.title
 
 
